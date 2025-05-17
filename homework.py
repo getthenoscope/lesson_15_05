@@ -91,16 +91,14 @@ class Celsius:
     
     @property
     def temperature(self):
-        print("Getting value...")
         return self._temperature
  
     @temperature.setter
     def temperature(self, value):
-        print("Setting value...")
         if value < -273.15:
             raise ValueError("Temperature below -273 is not possible")
         self._temperature = value
-        
+
 # Завдання 4
 
 # Опишіть два класи Base та його спадкоємця Child з методами method(), який виводить на консоль фрази відповідно "Hello from Base" та "Hello from Child", using classmethod (@classmethod) decorator.
